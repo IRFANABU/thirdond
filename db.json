@@ -1,0 +1,192 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "name": "mohamed",
+      "MobileNo": 98676587,
+      "Email": "",
+      "Password": "123456",
+      "id": 2
+    },
+    {
+      "name": "mohamed",
+      "MobileNo": 9877865678,
+      "Email": "",
+      "Password": "123456",
+      "id": 3
+    },
+    {
+      "name": "mohamed",
+      "MobileNo": 5678766,
+      "Email": "abu101@gmail.com",
+      "Password": "123456",
+      "id": 4
+    },
+    {
+      "name": "lk",
+      "MobileNo": 85421,
+      "Email": "hujkl",
+      "Password": "uhjikol",
+      "id": 5
+    },
+    {
+      "name": "",
+      "MobileNo": "",
+      "Email": "",
+      "Password": "",
+      "ConformPassword": "",
+      "id": 6
+    },
+    {
+      "name": "",
+      "MobileNo": "",
+      "Email": "",
+      "Password": "",
+      "ConformPassword": "",
+      "id": 7
+    },
+    {
+      "name": "",
+      "MobileNo": "",
+      "Email": "",
+      "Password": "",
+      "ConformPassword": "",
+      "id": 8
+    },
+    {
+      "name": "",
+      "MobileNo": "",
+      "Email": "",
+      "Password": "",
+      "ConformPassword": "",
+      "id": 9
+    },
+    {
+      "name": "",
+      "MobileNo": "",
+      "Email": "",
+      "Password": "",
+      "ConformPassword": "",
+      "id": 10
+    },
+    {
+      "name": "",
+      "MobileNo": "",
+      "Email": "",
+      "Password": "",
+      "ConformPassword": "",
+      "id": 11
+    },
+    {
+      "name": "Mohamed Irfan.A",
+      "MobileNo": "",
+      "Email": "",
+      "Password": "",
+      "ConformPassword": "",
+      "id": 12
+    },
+    {
+      "name": "",
+      "MobileNo": "",
+      "Email": "",
+      "Password": "",
+      "ConformPassword": "",
+      "id": 13
+    },
+    {
+      "name": "",
+      "MobileNo": "",
+      "Email": "",
+      "Password": "",
+      "ConformPassword": "",
+      "id": 14
+    },
+    {
+      "name": "",
+      "MobileNo": "",
+      "Email": "",
+      "Password": "",
+      "ConformPassword": "",
+      "id": 15
+    },
+    {
+      "name": "",
+      "MobileNo": "",
+      "Email": "",
+      "Password": "",
+      "ConformPassword": "",
+      "id": 16
+    },
+    {
+      "name": "",
+      "MobileNo": "",
+      "Email": "",
+      "Password": "",
+      "ConformPassword": "",
+      "id": 17
+    },
+    {
+      "name": "",
+      "MobileNo": "",
+      "Email": "",
+      "Password": "",
+      "ConformPassword": "",
+      "id": 18
+    },
+    {
+      "name": "ghgjhgh",
+      "MobileNo": "8934632776",
+      "Email": "ir103@yopmail.com",
+      "Password": "12345",
+      "ConformPassword": "",
+      "id": 19
+    },
+    {
+      "name": "Mohamed Irfan.A",
+      "MobileNo": "9098765465",
+      "Email": "ir102@yopmail.com",
+      "Password": "1234567",
+      "ConformPassword": "1234567",
+      "id": 20
+    },
+    {
+      "name": "Mohamed Irfan.A",
+      "MobileNo": "9789114926",
+      "Email": "irfan10942@gmail.com",
+      "Password": "123456",
+      "ConformPassword": "123456",
+      "id": 21
+    },
+    {
+      "name": "",
+      "MobileNo": "",
+      "Email": null,
+      "Password": "",
+      "ConformPassword": "",
+      "id": 22
+    },
+    {
+      "name": "Mohamed Irfan.A",
+      "MobileNo": "9789114926",
+      "Email": "yrtrv@gmail.com",
+      "Password": "12345678",
+      "ConformPassword": "12345678",
+      "uploadfile": "C:\\fakepath\\oasys1.jpg",
+      "id": 23
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

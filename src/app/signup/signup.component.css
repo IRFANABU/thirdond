@@ -1,0 +1,17 @@
+form {
+
+        width: 50%;
+
+}
+input{
+    width:270px ;
+    margin-left: 50px;
+}
+.form-text{
+   padding-left: 50px;
+    width: 300px;
+}
+label{
+
+    padding-left:20px;
+}

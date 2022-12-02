@@ -1,0 +1,124 @@
+<style>
+   .verticalNav{
+              
+    background-color:gray;
+    width: 200px;
+    height: 600px;   
+    border-color:  2px black;
+    float: left;
+
+   }   
+.nav-link{
+
+    color:aliceblue;
+}
+
+
+
+</style>
+  
+
+
+
+
+
+
+<!-- <nav>
+    <ul>
+      <li>
+        <a routerLink="/add-mobile" routerLinkActivate="activated">Add-Mobile</a>
+        </li>
+        <li>
+          <a routerLink="/mobile-list" routerLinkActivate="activated">Mobile-List</a>
+          </li>
+          <li>
+            <a routerLink="/add-mobile-brand" routerLinkActivate="activated">Add-Mobile-Brand</a>
+            </li>
+            <li>
+              <a routerLink="/mobile-brand-list" routerLinkActivate="activated">Mobile-Brand-list</a>
+              </li>
+              </ul>
+              </nav> -->
+
+
+              <!-- <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul> -->
+
+                <div class = "horizontal" >
+                    <nav class="navbar bg-dark">
+                        <div class="container-fluid">
+                          <form class="d-flex" role="search">
+                            <button class="btn btn-outline-danger" button (click)="Login()" >Login </button>
+                            <button type="button" (click)="Signup()" class="btn btn-outline-success" >Signup</button>
+                          </form>
+                        </div>
+                      </nav>
+                </div>
+
+
+
+
+
+            <div class ="verticalNav">
+              <ul class="nav flex-column">
+                <!-- <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" >Home</a>
+                </li> -->
+                <div class="dropdown-menu">
+                  <h6 class="dropdown-header">Dropdown header</h6>
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </div>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="add-mobile">Add Mobile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="mobile-list">Mobile List</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="mobile-brand-list">MobileBrandlist</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="add-mobile-brand">Add Brand</a>
+                </li>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Right-aligned menu
+                  </button>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <button class="dropdown-item" type="button">Action</button>
+                    <button class="dropdown-item" type="button">Another action</button>
+                    <button class="dropdown-item" type="button">Something else here</button>
+                  </div>
+                </div>
+
+
+
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">Action</button>
+                    <button class="dropdown-item" type="button">Another action</button>
+                    <button class="dropdown-item" type="button">Something else here</button>
+                  </div>
+                </div>
+              </ul>
+            
+            </div>
+
+            <router-outlet> </router-outlet>
+            

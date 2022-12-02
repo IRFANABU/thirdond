@@ -1,0 +1,131 @@
+<style>
+  .container {
+
+    width: 30%;
+
+  }
+
+  button {
+
+    margin-left: 140px;
+  }
+
+  a {
+    font-size: small;
+
+
+  }
+  input.ng-touched:focus {
+  outline-color: red;
+}
+
+ 
+</style>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="cal-md-5">
+      <div class="card">
+        <div class="text-center">
+          <h1>Sign UP</h1>
+          <h6>Enter your Email id and Password</h6>
+        </div>
+
+
+        <form name="signup" [formGroup]="signinForm" (ngSubmit)="signin()" novalidate>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Full Name:</label>
+            <input type="text" formControlName="name" class="form-control" id="fullname" placeholder="Enter the Full Name" required>
+            <div *ngIf="f['name'].invalid && (f['name'].dirty || f['name'].touched)" class="alert">
+              <div *ngIf="f['name'].errors?.['required']"> fullname is required </div>
+            </div>
+          </div>
+
+
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Mobile Number:</label>
+            <input type="text" formControlName="MobileNo" class="form-control" id="mobile" (keypress)="KeyPress($event)"
+              minlength="10" maxlength="10" placeholder="Enter the Mobile Number" required>
+
+            <div *ngIf="f['MobileNo'].touched && f['MobileNo'].errors?.['required'] ">Enter number only</div>
+
+            <div *ngIf=" f['MobileNo'].errors?.['pattern']">Mobile should be start with 6-9</div>
+          </div>
+
+
+          <!-- <div class ="mb-3">
+                        <label for="inputpassword" class ="form-label">Mobile Number:</label>
+                        <input type="text" formControlName="MobileNo" class ="form-control" id="mobile" placeholder="MobileNo"  [ngClass]="{'is-invalid':  submitted && f['MobileNo'].errors}">
+                        
+                        <div *ngIf=" submitted && f['MobileNo'].errors" class="invalid-feedback">
+                         <div *ngIf=" f['MobileNo'].errors['required']">Mobile no is needed</div> 
+                        </div>
+
+                        <div *ngIf=" f['MobileNo'].errors?.['maxlength'].errors?.['minlength']">
+                                Mobile must be start with 6-9
+                        </div> -->
+
+          <!-- <div *ngIf=" f['MobileNo'].errors['minlength']">Mo</div>
+                        <div *ngIf=" submitted && f['MobileNo'].errors['maxlength']">Mo</div> -->
+
+
+          <!-- <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address:</label>
+                      <input type="email" formControlName="Email" class="form-control" id="email" aria-describedby="emailHelp">
+                      <div *ngIf= "f['Email'].errors?.['required']" class="invalid-feedback"></div>
+                      <div *ngIf="f['Email'].errors?.['pattern']" >!Please Enter the valid Email Address</div>
+                    </div> -->
+
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address:</label>
+            <input type="email" formControlName="Email" class="form-control" id="email" placeholder="Enter email"
+              required>
+
+            <div *ngIf="f['Email'].touched && f['Email'].errors?.['required']" class="alert">Email is Needed </div>
+
+            <div *ngIf="f['Email'].errors?.['pattern']">Email is invalid</div>
+          </div>
+
+
+
+
+
+          <div class="mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" formControlName="Password" class="form-control" id="password" placeholder="password" required>
+            <div *ngIf="f['Password'].touched && f['Password'].errors?.['required']"> Password is required</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="cnpassword" class="form-label">ConformPassword:</label>
+            <input type="password" formControlName="ConformPassword" class="form-control" id="conform password" placeholder="conform password" required>
+            <div *ngIf="f['ConformPassword'].touched && signinForm.value.Password!==signinForm.value.ConformPassword">Conform password is mismatched</div>   
+            <div *ngIf="f['ConformPassword'].touched && f['ConformPassword'].errors?.['required']">Conform PassWord Required</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="uploadfile">Uploadfile:</label>
+            <input type="file" name="" id="fileupload" formControlName="uploadfile" placeholder="Upload File"(change)="fileupload($event)" class="form-control" required>
+          </div><br>
+          <div>
+            <label>D.O.B:</label>
+            <input type="date" max="{{currentdate | date:'yyyy-mm-dd'}}" formControlName="date">
+            
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary">signin</button> <br><br>
+
+
+          <a routerLink="/login">Already Have Account? click here to Login</a>
+        </form>
+      </div>
+
+
+    </div>
+  </div>
+</div>

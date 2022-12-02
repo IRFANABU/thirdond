@@ -1,0 +1,32 @@
+h3{
+    text-align: center;
+
+font-style: italic;
+font-size: 30px;
+}
+form{
+    text-align: center;
+    border-style: ridge;
+    border-radius: 5px 12px;
+    
+}
+.btn-sub{
+    background-color: cornflowerblue;
+    padding:5px 15px;
+    border-radius: 12px;
+    line-height: 1;
+}
+.btn-sub:hover{
+    line-height: 1.5;
+}
+.form{
+    width:70%;
+    padding-left: 350px;
+    padding-bottom: 100px;;
+}
+h2{
+    font-style: italic;
+}
+body{
+    background-color:powderblue;
+}

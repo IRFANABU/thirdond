@@ -1,0 +1,60 @@
+<html>
+    <head>
+<style>
+            .container {
+
+                margin-top: 90px;
+                width: 400px;
+            }
+
+            label{
+
+                width: 400px;
+            }
+            body{
+
+                background-color: blanchedalmond;
+                background-size: cover;
+            
+            }
+
+</style>
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="cal-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Login</h1>
+                    <h6>Enter your Email id and Password</h6>
+                </div>
+
+                    <select name="name" id="selectid" #selectLang (change)="switchLang(selectLang.value)">
+
+                        <option *ngFor="let lang of translate.getLangs()">{{lang}}</option>
+                    </select>
+                    <div>
+                        <label>{{'name'|translate}}</label>
+                    </div>
+                <form [formGroup]="loginForm" (ngSubmit)="login()" >
+                    <div class="mb-3">
+                      <label for="Email" class="form-label" name="email"> {{'Email address'|translate}}</label>
+                      <input type="email" formControlName="Email" class="form-control" id="Email"  >
+                  
+                    </div>
+                    <div class="mb-3">
+                      <label for="Password" class="form-label">{{'password'|translate}}</label>
+                      <input type="password" formControlName="Password" class="form-control" id="Password" >
+                    </div>
+                    <button type="submit" class="btn btn-primary" >Login</button>
+                  </form>
+                  <a routerLink="/signup" class="link-primary">New user? click here to signin</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

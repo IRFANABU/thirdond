@@ -1,0 +1,50 @@
+<html>
+  
+        <body>
+        <div>
+    <h3>ADD MOBILE</h3>
+    <hr />
+</div>
+<div class="form">
+    <br><br/>
+    <strong>
+<form (ngSubmit)="onSubmit()">
+    <br>
+    <div>
+        <h2>Enter Mobile Details:</h2>
+        </div>
+        <br><br/>
+    <div>
+        <label>Brand:</label>
+        <select [(ngModel)]="mobile.brand" name="brand" (change)="getbrandcode()">
+            <option *ngFor="let brand of brands">{{brand}}</option>
+        </select>
+    </div>
+    <br><br/>
+        <div>
+            <label for="brandcode">Brandcode</label>
+            <input type ="text" id="brandcode"  value={{mobile.brandCode}} [(ngModel)]="mobile.brandCode" name="brandcode">
+        </div>
+    <div>
+        <label>Color:</label>
+        <input type="text" placeholder="Enter Color" id="color"   [(ngModel)]="mobile.color" name="color"> 
+    </div>
+    <br><br/>
+    <div>
+        <label>Ram:</label>
+        <input type="text" placeholder="Enter Ram" id="ram"   [(ngModel)]="mobile.ram" name="ram">
+    </div>
+    <br><br/>
+    <div>
+        <label>Price:</label>
+        <input type="text" placeholder="Enter BrandCode" id="ram"   [(ngModel)]="mobile.price" name="ram">
+    </div>
+    <br/>
+    <button type="submit" class="btn-sub">Add</button>
+    <br><br/>
+</form>
+</strong>
+</div>
+</body>
+</html>
+

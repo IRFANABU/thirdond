@@ -1,0 +1,54 @@
+<html>
+    <head><title></title>
+        <style>
+h2{
+    text-align: center;
+}
+.form{
+    width:70%;
+    padding-left: 420px;
+}
+form{
+    text-align: center;
+    border-style: ridge;
+    border-radius: 5px 12px;
+    font-weight: bold;
+}
+.btn-submit{
+    background-color: cornflowerblue;
+    padding:5px 15px;
+    border-radius: 12px;
+    line-height: 1;
+}
+.btn-submit:hover{
+    line-height: 1.5;
+}
+        </style>
+        </head>
+        <hr/>
+        <body>
+            <h2>Update Laptop Details:</h2>
+            <br><br/>
+            <div class="form">
+                <form (ngSubmit)="onSubmit()">
+                    <br><br/>
+                    <label>Brand:</label>
+                    <input type="text" placeholder="Enter Brand" id="brand"   [(ngModel)]="mob.brand" name="brand" required>
+                    <br><br/>
+                    <label>Color:</label>
+                    <input type="text" placeholder="Enter Color" id="color"   [(ngModel)]="mob.color" name="color" required>
+                    <br><br/>
+                    <label>Ram:</label>
+                    <input type="text" placeholder="Enter Ram" id="ram"   [(ngModel)]="mob.ram" name="ram" required>
+                    <br><br/>
+                    <label>BrandCode:</label>
+                    <input type="text" placeholder="Enter BrandCode" id="ram"   [(ngModel)]="mob.price" name="ram" required>
+                    <br><br/>
+                    <button type="submit" class="btn-submit">Submit</button>
+                    <br><br/>
+                    </form>
+                    </div>
+                    </body>
+                    </html>
+
+
